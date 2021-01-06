@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beds 'N Brews</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nerko+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Menu/Navbar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://maniac-i.github.io/Beds-N-Brews/">
+        <img
+          src="https://rlv.zcache.com/frothy_cartoon_glass_beer_mug_with_beer_classic_round_sticker-r845186bafef24975bb6f15da2c34a974_0ugmp_8byvr_704.jpg">
+      </a>
+      <a class="navbar-item" style="font-weight: bold;" href="https://maniac-i.github.io/Beds-N-Brews/">
+        BEDS 'N BREWS
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <a href="#mySub" class="navbar-item">
+        Search
+      </a>
+      <a href="#hotel-navbar" class="navbar-item">
+        Hotels
+      </a>
+      <a href="#brew-navbar" class="navbar-item">
+        Breweries
+      </a>
+    </div>
+  </nav>
+
+  <!-- Cover with search bar -->
+  <section id="background" class="hero is-link is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container">
+        <div>
+          <h1 class="title " id="myTitle"> Beds-N-Brews</h1>
+          <h2 class="subtitle" id="mySub">Home of Good Times</h2>
+        </div>
+        <br>
+
+        <!--Search Bar -->
+        <div class="field has-addons has-addons-centered" id="searchBar">
+          <div class="control">
+            <input class="input" type="text" placeholder="Enter a City">
+          </div>
+          <div class="control searchButton">
+            <a class="button">Search</a>
+          </div>
+        </div>
+
+        <!-- dropdown item with brewery types -->
+        <div class="select">
+          <select id="breweryType">
+            <option value="">Select Brewery Type</option>
+            <option value="brewpub">Brewpub</option>
+            <option value="micro">Micro Brewery</option>
+            <option value="nano">Nano Brewery</option>
+          </select>
+        </div>
+  </section>
+
+  <!--Columns that display hotel/brewery information-->
+  <section class="section">
+    <div class="columns">
+
+      <!--Displays Hotel Information-->
+      <div id="hotel-navbar" class="column columnMargin">
+        <h2 class="header">Hotels:</h2>
+        <br>
+        <div class="hotels">
+        </div>
+      </div>
+
+      <!--Displays Brewery Information-->
+      <div id="brew-navbar" class="column">
+        <h2 class="header">Breweries:</h2>
+        <br>
+        <div class="breweries">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by
+        <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
+        licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+        website content is licensed
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script-hotels.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
